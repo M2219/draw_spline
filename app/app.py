@@ -55,7 +55,8 @@ def send_task(image, cnt):
     return render_template("landmark.html", landmark_name=config.SPNAME,
                            image_name=image, image_height=config.IMAGE_HEIGHT, url_back=url_back,
                            done=images.num_previously_splined + splines.num_spline_written,
-                           total=images.num_images, cnt_c=cnt, num_p=splines.num_points)
+                           total=images.num_images, cnt_c=cnt, num_p=splines.num_points, num_k=splines.k_deg,
+                           smooth_val=splines.smooth )
 
 
 @app.route('/finished')
