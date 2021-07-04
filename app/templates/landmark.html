@@ -10,11 +10,11 @@
 
 <form action="" method="post">
   <label for="fname">expected number of points:</label>
-  <input type="text" id="fname" name="n_points" value="5"><br><br>
+  <input type="text" id="fname" name="n_points" value="{{ num_p }}"><br><br>
   <label for="lname">degree: 1 < k < 5 (k=1 is linear):</label>
-  <input type="text" id="lname" name="degree" value="2"><br><br>
+  <input type="text" id="lname" name="degree" value="{{num_k}}"><br><br>
   <label for="fname">smoothness (0 is non-smoothed curve):</label>
-  <input type="text" id="fname" name="smoothness" value="20"><br><br>
+  <input type="text" id="fname" name="smoothness" value="{{smooth_val}}"><br><br>
   <input type="submit" value="Submit">
 </form>
 
