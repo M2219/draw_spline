@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+   <title>Yeah!</title>
+</head>
+<body>
+
+       <h1>You are finished, everything is splined!</h1>
+       {% for addr in image_add %}
+           <img src="/images/{{ addr }}" height="{{ image_height }}" ismap/>
+       {% endfor %}
+
+</body>
+</html>

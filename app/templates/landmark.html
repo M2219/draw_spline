@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+   <title>Landmark for spline</title>
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+</head>
+
+<body>
+
+<form action="" method="post">
+  <label for="fname">expected number of points:</label>
+  <input type="text" id="fname" name="n_points" value="5"><br><br>
+  <label for="lname">degree: 1 < k < 5 (k=1 is linear):</label>
+  <input type="text" id="lname" name="degree" value="2"><br><br>
+  <label for="fname">smoothness (0 is non-smoothed curve):</label>
+  <input type="text" id="fname" name="smoothness" value="20"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+   <h3> Spline task: <span class="highlight">{{ landmark_name }} </span></h3>
+   <h2> NOTE: the value of x must be increasing</h2>
+
+   <div> Images: {{ done }} / {{ total }} </div>
+   <div> Points: {{ cnt_c }} / {{ num_p }} </div>
+   <a href="/results/{{ image_name }}/coordinates">
+      <!-- ismap makes image clickable, sends pixel coordinates to server -->
+      <img src="/images/{{ image_name }}" height="{{ image_height }}" ismap/>
+   </a>
+
+</body>
+</html>
