@@ -32,12 +32,12 @@ Edit config.py
 INPUT_DIR = "/home/ubuntu/draw_spline/input"
 
 Put you images in INPUT_DIR
-
 Edit INPUT_DIR to your abs input path 
 
 ##### IMAGE_DIR
 IMAGE_DIR = "/home/ubuntu/draw_spline/images"
 
+Edit INPUT_DIR to your abs input path
 The directory where the results will be stored. Will be automatically created if it does not exist. Also, will be cleared after re-running.
 
 ##### SPNAME
