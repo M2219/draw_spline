@@ -12,7 +12,7 @@ After marking points on all images the results are shown as demonstration of fit
 
 ![Demonstration of the tool in action](draw_sp_airchair.jpg) | ![Demonstration of the tool in action](draw_sp_snake2_k2_5.jpg)
 
-####Note: after marking the last point left click will go for the next image
+#### Note: after marking the last point left click will go for the next image
 
 ## Installation
 
